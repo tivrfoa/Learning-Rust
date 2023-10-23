@@ -17,6 +17,13 @@ TODO
 
 ## Advanced
 
+
+### Async
+
+[Thread-per-core](https://without.boats/blog/thread-per-core/)
+
+### Type System
+
 [Rust compile time mandelbrot](http://www.treblig.org/daveG/rust-mand.html)
 
 TODO

@@ -13,10 +13,13 @@ TODO
 
 ## Intermediate
 
+[Asynchronous Programming in Rust - Async Book](https://rust-lang.github.io/async-book)
+
+[Executing Multiple Futures at a Time](https://rust-lang.github.io/async-book/06_multiple_futures/01_chapter.html)
+
 TODO
 
 ## Advanced
-
 
 ### Async
 

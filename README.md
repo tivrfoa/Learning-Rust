@@ -17,4 +17,6 @@ TODO
 
 ## Advanced
 
+[Rust compile time mandelbrot](http://www.treblig.org/daveG/rust-mand.html)
+
 TODO

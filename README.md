@@ -20,6 +20,8 @@ TODO
 
 ### Async
 
+[Why async Rust?](https://without.boats/blog/why-async-rust/)
+
 [Thread-per-core](https://without.boats/blog/thread-per-core/)
 
 ### Type System

@@ -1,3 +1,22 @@
+
+## Stackless vs Stackfull coroutines
+
+[Project Loom: Fibers and Continuations for the Java Virtual Machine](https://cr.openjdk.org/~rpressler/loom/Loom-Proposal.html)
+
+[Fibers under the magnifying glass](https://www.open-std.org/JTC1/SC22/WG21/docs/papers/2018/p1364r0.pdf)
+
+## IO Multiplexing - Non-blocking IO
+
+[Chapter 6. I/O Multiplexing: The select and poll Functions](https://notes.shichao.io/unp/ch6/)
+
+>Nonblocking I/O Model
+>
+>When a socket is set to be nonblocking, we are telling the kernel "when an I/O operation that I request cannot be completed without putting the process to sleep, do not put the process to sleep, but return an error instead".
+
+## glibc aio
+
+https://github.com/bminor/glibc/blob/master/rt/aio_misc.c#L307
+
 # Async Rust
 
 ## How to wait for a list of async function calls in Rust?

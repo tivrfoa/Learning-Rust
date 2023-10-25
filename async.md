@@ -213,3 +213,13 @@ fn main() {
     );
 }
 ```
+
+
+# Java NIO
+
+
+From: https://docs.oracle.com/en/java/javase/20/core/grep-nio-example.html
+
+>The Java NIO (New Input/Output) API defines buffers, which are containers for data, and other structures, such as charsets, channels, and selectable channels. Charsets are mappings between bytes and Unicode characters. Channels represent connections to entities capable of performing I/O operations. Selectable channels are those that can be multiplexed, which means that they can process multiple I/O operations in one channel.
+
+

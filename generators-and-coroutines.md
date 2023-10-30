@@ -5,20 +5,20 @@
 
 https://langdev.stackexchange.com/questions/2468/why-do-so-few-languages-have-this-type-of-coroutine-feature
 
-From: https://langdev.stackexchange.com/a/2469/2807
+## From: https://langdev.stackexchange.com/a/2469/2807
 
 
-**It might be a library feature instead of a language feature**
+### It might be a library feature instead of a language feature
 
 In some languages it might be feasible to implement coroutines as a library, without needing any support from the language itself. For example, there are coroutine libraries for C and C++ (Boost::Coroutine existed long before C++20 introduced coroutines as a language feature).
 
-**Coroutines are complicated**
+### Coroutines are complicated
 
 A generator is a very limited form of a coroutine. If a general-purpose language wants to implement coroutines, it probably wants to support a wider range of applications than just generators. However, there are lots of things to worry about then: how do you schedule coroutines, do you have stackful or stackless coroutines, how should it integrate with the existing language features, and so on. It could be that some languages decided that it's better to wait before committing to a specific implementation which might later turn out to be a bad decision.
 
 But once you have generic coroutines in your language, then it's rather easy to have generators as well. In fact, that's the very first type of coroutine that will be supported in the C++ standard library (C++23's std::generator).
 
-**Composing generators**
+### Composing generators
 
 You already pointed out that there is a difference in how generators compose between Python and SuperCollider. That's another thing you have to worry about when impementing this as a language feature. Do yields cross coroutine function boundaries or not?
 
@@ -65,4 +65,15 @@ std::generator<std::variant<int, std::string>> myRoutine() {
 for (auto x: myRoutine())
     std::visit([](auto x){ std::print("{}\n", x); }, x);
 ```
+
+
+
+# growing fibers
+
+https://wingolog.org/archives/2017/06/27/growing-fibers
+
+
+# Evolution of the x86 context switch in Linux
+
+https://www.maizure.org/projects/evolution_x86_context_switch_linux/
 

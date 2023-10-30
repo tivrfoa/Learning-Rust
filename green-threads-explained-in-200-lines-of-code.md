@@ -1,6 +1,8 @@
 
 https://www.reddit.com/r/rust/comments/seb0ex/green_threads_explained_in_200_lines_of_rust/
 
+https://news.ycombinator.com/item?id=20164062
+
 https://github.com/ziyi-yan/green-threads
 
 ```rust

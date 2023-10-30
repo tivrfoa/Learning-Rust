@@ -13,6 +13,22 @@
 >
 >When a socket is set to be nonblocking, we are telling the kernel "when an I/O operation that I request cannot be completed without putting the process to sleep, do not put the process to sleep, but return an error instead".
 
+## What Color is Your Function?
+
+https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/
+
+>Three more languages that don’t have this problem: Go, Lua, and Ruby.
+>
+>Any guess what they have in common?
+>
+>Threads. Or, more precisely: multiple independent callstacks that can be switched between. It isn’t strictly necessary for them to be operating system threads. Goroutines in Go, coroutines in Lua, and fibers in Ruby are perfectly adequate.
+>
+>Once operation completes, you need to resume what you were doing. The usual way a language “remembers where it is” is the callstack. That tracks all of the functions that are currently being invoked and where the instruction pointer is in each one.
+
+>**Awaiting a generated solution**
+>
+>Async-await does help. If you peel back your compiler’s skull and see what it’s doing when it hits an await call you’d see it actually doing the CPS-transform. That’s why you need to use await in C#: it’s a clue to the compiler to say, “break the function in half here”. Everything after the await gets hoisted into a new function that the compiler synthesizes on your behalf.
+
 ## glibc aio
 
 https://github.com/bminor/glibc/blob/master/rt/aio_misc.c#L307
